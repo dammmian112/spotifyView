@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: black;
+    display: flex;
+}
+
+.wszystko_div {
+    background-color: black;
+    color: white;
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.navbar {
+    min-height: 0;
+    flex-direction: column;
+    height: 100vh;
+    width: 72px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+}
+
+.lewy_gorny_div {
+    height: auto;
+    width: 72px;
+    background-color: #eeaeca;
+    border-radius: 7px;
+    padding: 8px 12px;
+}
+
+.lewy_boczny_div {
+    margin-top: 8px;
+    height: 100%;
+    width: 72px;
+    background-color: #eeaeca;
+    border-radius: 7px;
+    padding: 8px 12px;
+}
+
+main {
+    padding: 8px;
+    border-radius: 7px;
+    margin-left: 8px;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+}
+
+.przygotowano_dla_ciebie_div {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.napis_przygotowano_dla_ciebie {
+    margin-top: 50px;
+    padding: 8px;
+    font-size: 25px;
+
+}
+
+.przygotowano_dla_ciebie_okna {
+    width: 33%;
+    
+}
+
+.przygotowano_dla_ciebie_img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+
+}
+
+.przygotowano_dla_ciebie_okna h1{
+    color: #333;
+}
+
+.przygotowano_dla_ciebie_okna p {
+    color: gray;
+}
+
+.h2_wykonawca {
+    margin-bottom: 40px;
+}
+
+.o_wykonawcy_div {
+    width: 100%;
+    background-color:#75a4da;
+    border-radius: 7px;
+}
+
+article {
+    padding: 8px;
+    border-radius: 7px;
+    margin-left: 8px;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vw;
+    background-color: #94bbe9;
+}
+
+.Miniaturka_duza_img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.albumy {
+    padding: 8px;
+    display: flex;
+    width: 100%;
+}
+
+.albumy_lewo {
+width: 50%;
+margin-right: 5px;
+
+}
+
+.albumy_prawo {
+    width: 50%;
+    margin-left: 5px;
+}
+.n1 {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 64px;
+    background-color:black;
+    border-radius: 7px;
+    display: flex;
+}
+
+.n1 h2, .n2 h2 {
+    padding: 8px;
+}
+
+.n2 {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 64px;
+    background-color:black;
+    border-radius: 7px;
+    display: flex;
+}
+
+.last {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 64px;
+}
+
+.okladki_albumy_gora_lewo {
+    overflow: hidden;
+    width: 63px;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.okladki_nav_boczny {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.kategorie_gora {
+    display: flex;
+    padding: 8px;;
+}
+
+.kategoria_div {
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.kategoria_div h2 {
+    color: white;
+}
+
+.library {
+    display: flex;
+}
+
+.library h2 {
+    display: none;
+}
+
+.home h2 {
+    display: none;
+}
+
+.search h2 {
+    display: none;
+}
+
+.library_div {
+    display: flex;
+}
+
+.albumy_library {
+    width: 100%;
+    flex-direction: column;
+}
+
+.kategoria_div h2 {
+    padding: 8px;
+}
+
+.albumy h2 {
+    color: white;
+}
+
+.miniaturka_library {
+    padding: 3px;
+    width: 48px;
+    height: 100%;
+}
+
+.albumy_male_library {
+    border: 1px solid black;
+    height: 48px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 3px;
+}
+
+.albumy_male_library h2 {
+    display: none;
+}
+
+.o_wykonawcy_div h2,p{
+    padding: 5px;
+}
+
+@media(min-width: 1200px)
+{
+    .navbar {
+        width: 300px;
+    }
+    .lewy_gorny_div {
+        width: 300px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .home {
+        display: flex;
+    }
+
+    .home h2 {
+        padding: 8px;
+        font-size: 26px;
+        color: black;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .search h2 {
+        padding: 8px;
+        font-size: 26px;
+        color: black;
+    }
+
+    .library_div {
+        display: flex;
+    }
+
+    .home h2 {
+        display: block;
+        padding: 8px;
+        font-size: 26px;
+        color: black;
+    }
+
+    .search h2 {
+        display: block;
+        padding: 8px;
+        font-size: 26px;
+        color: black;
+    }
+
+    .library h2 {
+        display: block;
+        padding: 8px;
+        font-size: 26px;
+        color: black;
+    }
+
+    
+
+    .lewy_boczny_div {
+        width: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .albumy_male_library {
+        display: flex;
+        height: 63px;
+        margin-top: 5px;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+
+    .albumy_male_library h2 {
+        display: block;
+        padding: 7px;
+        color: black;
+    }
+}
+
